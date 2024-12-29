@@ -2,7 +2,8 @@
 import minifaker from 'minifaker';
 import "minifaker/locales/en";
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Story from './Story';
+
 
 export default function Stories() {
     const [storyUsers, setStoryUsers] = useState<{ username: string; img: string; id: number; }[]>([]);
@@ -17,12 +18,11 @@ export default function Stories() {
     }, []);
 
     return (
-        <div>
+        <div className="flex space-x-2 p-6 bg-white mt-4 border-gray-200 border overflow-x-scroll scrollbar-none">
             {storyUsers.map(user => (
-                <div key={user.id}>
-                    <Image src={user.img} alt={user.username} width={150} height={150} priority />
-                    <p>{user.username}</p>
-                </div>
+                
+                <Story key={user.id} username={user.username} img={user.img}/>
+                    
             ))}
         </div>
     );
