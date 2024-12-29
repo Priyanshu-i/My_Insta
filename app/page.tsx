@@ -9,9 +9,13 @@ export default function Home() {
         <meta name = 'description' content= 'generate'></meta>
         <link rel = 'icon' href = "/favicon.ico" />
       </head>
+
       {/* Header */}
+      
       <Header/>
+      
       {/* Feed */}
+      
       {/* Modal */}
     </div>
   );
