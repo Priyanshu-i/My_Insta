@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ['logos-world.net','cdn.pixabay.com'],
+    domains: ['i.pravatar.cc','logos-world.net','cdn.pixabay.com'],
   },
 };
 

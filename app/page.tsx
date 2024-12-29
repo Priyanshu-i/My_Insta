@@ -1,20 +1,23 @@
 import Head from 'next/head'
 import Header from "./components/Header";
+import Feed from './components/Feed';
 
 export default function Home() {
   return (
-    <div>
-      <head>
+    <div className='bg-gray-50 min-h-screen'>
+      <Head>
         <title>My_Insta</title>
         <meta name = 'description' content= 'generate'></meta>
         <link rel = 'icon' href = "/favicon.ico" />
-      </head>
+      </Head>
 
       {/* Header */}
       
       <Header/>
       
       {/* Feed */}
+
+      <Feed/>
       
       {/* Modal */}
     </div>
