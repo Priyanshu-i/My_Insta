@@ -22,7 +22,7 @@ export default function Posts() {
       username: "tiger",
       userImg: "https://th.bing.com/th/id/OIP.HYrmtJbUev0xWt9NU1wA8gHaHC?rs=1&pid=ImgDetMain",
       img: "https://media.istockphoto.com/id/1223040139/photo/traditional-architecture-in-nottingham-east-midlands-uk.webp?a=1&s=612x612&w=0&k=20&c=FUX7g5XTYDiUc9gM3jkK9VIvK7zUHg5fewrrV3xIGw8=",
-      caption: "azkaban post",
+      caption: "looks like azkaban",
     }
   ]
 

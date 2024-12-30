@@ -1,5 +1,5 @@
 import React from 'react'
-import { Ellipsis, Heart, MessageCircleMore, BookmarkIcon} from 'lucide-react';
+import { Ellipsis, Heart, MessageCircleMore, BookmarkIcon, Smile } from 'lucide-react';
 
 export default function Post({img, username, userImg, caption, id}:{img: string, username: string, userImg: string, caption: string, id: string}) {
   return (
@@ -24,6 +24,16 @@ export default function Post({img, username, userImg, caption, id}:{img: string,
             </div>
                 <BookmarkIcon className='btn'/>
         </div>
+
+        {/* Post Comments */}
+        <p className='p-5 truncate'><span className='font-bold mr-5'>{username} </span>{caption}</p>
+
+        {/* Post Input Box */}
+        <form action="" className='flex items-center p-4'>
+        <Smile className='h-7'/>
+        <input type="text" placeholder='Add a comment...' className='border-none focus:ring-0 flex-1'/>
+        <button className='font-semibold text-blue-400'>Post</button>
+        </form>
     </div>
   )
 }
