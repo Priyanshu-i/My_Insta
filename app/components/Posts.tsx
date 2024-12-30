@@ -7,7 +7,7 @@ export default function Posts() {
       id: "1",
       username: "CoolGuy",
       userImg: "https://th.bing.com/th/id/OIP.HYrmtJbUev0xWt9NU1wA8gHaHC?rs=1&pid=ImgDetMain",
-      img: "https://images.unsplash.com/photo-1731432248531-819b94ee2dcd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+      img: "https://plus.unsplash.com/premium_photo-1728732571646-1a883acdcab9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       caption: "This is a cool post",
     },
     {

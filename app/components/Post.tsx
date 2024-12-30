@@ -1,5 +1,5 @@
 import React from 'react'
-import { EllipsisHorizontalIcon} from '@heroicons/react/20/solid'
+import { Ellipsis, Heart, MessageCircleMore, BookmarkIcon} from 'lucide-react';
 
 export default function Post({img, username, userImg, caption, id}:{img: string, username: string, userImg: string, caption: string, id: string}) {
   return (
@@ -9,12 +9,21 @@ export default function Post({img, username, userImg, caption, id}:{img: string,
       <div className="flex items-center p-5">
         <img className="h-12 rounded-full object-cover border p-1 mr-3"src = {userImg} alt = {username} />
         <p className='font-bold flex-1'>{username}</p>
-        <EllipsisHorizontalIcon className='h-5'/>
+        <Ellipsis className='h-5'/>
         
       </div>
 
       {/* Post image */}
       <img src = {img} alt="post" className="object-cover w-full"/>
+
+        {/* Post button */}
+        <div className='flex justify-between px-4 pt-4'>
+            <div className="flex space-x-4 mt-0 mb-3">
+                <Heart className='btn'/>
+                <MessageCircleMore className='btn'/>
+            </div>
+                <BookmarkIcon className='btn'/>
+        </div>
     </div>
   )
 }
